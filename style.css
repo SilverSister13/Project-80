@@ -1,0 +1,21 @@
+.para1{
+    float: left;
+    }
+
+.para2{
+float: right;
+}
+
+body{
+    padding: 0;
+}
+
+div{
+    width: 48%;
+    margin: 10px;
+}
+
+#showParagraph1, #showParagraph2{
+    width: 100%;
+    margin: 10px;
+}

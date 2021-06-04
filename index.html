@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Building Paragraphs</title>
+    <link rel = "styleSheet" href = "style.css">
+    </head>
+    <body>
+        <center>
+
+<div class = "para1">
+<span>1. </span>
+<input type = "text" id = "para1_input_box_1" placeholder="Input box 1">
+<br><br>
+<span>2. </span>
+<input type = "text" id = "para1_input_box_2" placeholder="Input box 2">
+<br><br>
+<span>3. </span>
+<input type = "text" id = "para1_input_box_3" placeholder="Input box 3">
+<br><br>
+<span>4. </span>
+<input type = "text" id = "para1_input_box_4" placeholder="Input box 4">
+<br><br>
+<span>5. </span>
+<input type = "text" id = "para1_input_box_5" placeholder="Input box 5">
+<br><br>
+<span>6. </span>
+<input type = "text" id = "para1_input_box_6" placeholder="Input box 6">
+<br><br>
+<button onclick = "getParagraph1()"Get Paragraph 1>Show Paragraph 1</button>
+</div>
+
+<div class = "para2">
+<span>1. </span>
+<input type = "text" id = "para2_input_box_1" placeholder="Input box 1">
+<br><br>
+<span>2. </span>
+<input type = "text" id = "para2_input_box_2" placeholder="Input box 2">
+<br><br>
+<span>3. </span>
+<input type = "text" id = "para2_input_box_3" placeholder="Input box 3">
+<br><br>
+<span>4. </span>
+<input type = "text" id = "para2_input_box_4" placeholder="Input box 4">
+<br><br>
+<span>5. </span>
+<input type = "text" id = "para2_input_box_5" placeholder="Input box 5">
+<br><br>
+<span>6. </span>
+<input type = "text" id = "para2_input_box_6" placeholder="Input box 6">
+<br><br>
+<button onclick = "getParagraph2()"Get Paragraph 2>Show Paragraph 2</button>
+</div>
+
+<div id = "showParagraph1"></div>
+<div id = "showParagraph2"></div>
+</center>
+
+
+<script>
+    function getParagraph1(){
+        var inputs = [];
+        for(var i = 1 ; i <=6 ; i++){
+            inputs.push(document.getElementById("para1_input_box_" + i).value)
+        }
+        inputs.join(". ");
+        document.getElementById("showParagraph1").innerHTML = inputs.join(". ")
+    }
+
+    function getParagraph2(){
+        var inputs = [];
+        for(var j = 1 ; j <=6 ; j++){
+            inputs.push(document.getElementById("para2_input_box_" + j).value)
+        }
+        inputs.join(". ");
+        document.getElementById("showParagraph2").innerHTML = inputs.join(". ")
+    }
+</script>
+
+</body>
+</html>
